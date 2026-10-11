@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMA ALTIORA - Rise Higher, Dream Further</title>
+  
+  <!-- Google Fonts: Montserrat (Judul) & Roboto (Isi) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= NAV BAR ================= -->
+  <nav class="navbar navbar-expand-lg sticky-top custom-navbar">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="images/Logo_Sekolah-removebg-preview (1).png" alt="Logo SMA ALTIORA" height="45">
+        <span class="brand-text">SMA ALTIORA</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto gap-lg-2">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#profil">Profil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#akademik">Akademik</a></li>
+          <li class="nav-item"><a class="nav-link" href="#guru">Guru & Staf</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ekstrakurikuler">Ekstrakurikuler</a></li>
+          <li class="nav-item"><a class="nav-link" href="#fasilitas">Fasilitas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#berita">Berita</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeri">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= HERO CAROUSEL ================= -->
+  <section id="home">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="images/gedung sekolah.jpg" class="d-block w-100 hero-img" alt="Gedung SMA Altiora">
+          <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+            <h1 class="display-4 fw-bold text-white">SMA ALTIORA</h1>
+            <p class="fs-4 italic-slogan mb-4">Rise Higher, Dream Further</p>
+            <div class="d-flex gap-3">
+              <a href="#profil" class="btn btn-accent btn-lg">Selengkapnya</a>
+              <a href="#kontak" class="btn btn-outline-light btn-lg">Daftar Sekarang</a>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="images/kegiatan belajar 1.jpg" class="d-block w-100 hero-img" alt="Kegiatan Belajar Siswa">
+          <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+            <h2 class="display-5 fw-bold text-white">Belajar untuk Masa Depan</h2>
+            <p class="fs-5 mb-4 text-white">Membangun pengetahuan, kreativitas, dan karakter siswa.</p>
+            <a href="#profil" class="btn btn-accent btn-lg">Selengkapnya</a>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="images/prestasi 1.jpg" class="d-block w-100 hero-img" alt="Prestasi Siswa Altiora">
+          <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+            <h2 class="display-5 fw-bold text-white">Berani Berprestasi</h2>
+            <p class="fs-5 mb-4 text-white">Mengembangkan potensi siswa melalui berbagai kegiatan dan kompetisi.</p>
+            <a href="#profil" class="btn btn-accent btn-lg">Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- ================= PROFIL & VISI MISI ================= -->
+  <section id="profil" class="py-5 bg-baby-blue-light">
+    <div class="container py-4">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <span class="badge bg-baby-blue text-dark mb-2 fs-6">Sambutan & Profil</span>
+          <h2 class="section-title mb-3">Tentang SMA ALTIORA</h2>
+          <p class="text-secondary lead fs-6">
+            SMA Altiora adalah lembaga pendidikan menengah kejuruan dan umum yang berkomitmen menciptakan lingkungan belajar inklusif, modern, dan inspiratif. Melalui kurikulum yang adaptif serta dukungan tenaga pengajar profesional, kami mendorong setiap siswa untuk mencapai potensi maksimalnya.
+          </p>
+          <p class="text-secondary fs-6">
+            Dengan slogan <em>"Rise Higher, Dream Further"</em>, kami meyakini bahwa pendidikan tidak hanya sebatas akademik, melainkan juga pembentukan karakter, kepemimpinan, dan kesiapan menghadapi tantangan global.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <div class="card card-custom p-4 border-0 shadow-sm">
+            <div class="card-body">
+              <h3 class="h4 text-dark fw-bold mb-3"><i class="bi bi-compass-fill me-2 text-baby-blue-dark"></i>Visi Sekolah</h3>
+              <p class="fst-italic text-dark bg-baby-blue-light p-3 rounded border-start border-4 border-baby-blue">
+                "Menjadi sekolah unggul yang membentuk generasi berpengetahuan, berkarakter, kreatif, dan mampu memberikan dampak positif bagi masyarakat."
+              </p>
+              
+              <h3 class="h4 text-dark fw-bold mt-4 mb-3"><i class="bi bi-list-check me-2 text-baby-blue-dark"></i>Misi Sekolah</h3>
+              <ul class="list-unstyled mb-0 text-secondary">
+                <li class="d-flex mb-2"><i class="bi bi-check-circle-fill text-baby-blue-dark me-2"></i> Menyelenggarakan pembelajaran berkualitas tinggi berbasis sains dan teknologi.</li>
+                <li class="d-flex mb-2"><i class="bi bi-check-circle-fill text-baby-blue-dark me-2"></i> Mengembangkan potensi non-akademik siswa melalui ekstrakurikuler terpadu.</li>
+                <li class="d-flex mb-2"><i class="bi bi-check-circle-fill text-baby-blue-dark me-2"></i> Membina karakter kepemimpinan, kejujuran, dan kepedulian sosial.</li>
+                <li class="d-flex"><i class="bi bi-check-circle-fill text-baby-blue-dark me-2"></i> Membangun kemitraan strategis dengan perguruan tinggi dan industri.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= AKADEMIK ================= -->
+  <section id="akademik" class="py-5 bg-white">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Program Akademik</h2>
+        <p class="text-muted">Pilihan peminatan studi untuk mendukung minat dan bakat peserta didik.</p>
+      </div>
+      <div class="row g-4">
+        <!-- MIPA -->
+        <div class="col-md-4">
+          <div class="card card-custom text-center p-4 h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <div class="icon-wrapper mb-3 mx-auto">
+                <i class="bi bi-calculator-fill fs-1 text-baby-blue-dark"></i>
+              </div>
+              <h3 class="h5 fw-bold text-dark mb-2">Program MIPA</h3>
+              <p class="text-secondary fs-6">Fokus pada penalaran analitis, sains, matematika, dan pemecahan masalah secara ilmiah.</p>
+            </div>
+          </div>
+        </div>
+        <!-- IPS -->
+        <div class="col-md-4">
+          <div class="card card-custom text-center p-4 h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <div class="icon-wrapper mb-3 mx-auto">
+                <i class="bi bi-globe-americas fs-1 text-baby-blue-dark"></i>
+              </div>
+              <h3 class="h5 fw-bold text-dark mb-2">Program IPS</h3>
+              <p class="text-secondary fs-6">Mengembangkan pemahaman sosial, ekonomi, sosiologi, serta dinamika masyarakat modern.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Bahasa -->
+        <div class="col-md-4">
+          <div class="card card-custom text-center p-4 h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <div class="icon-wrapper mb-3 mx-auto">
+                <i class="bi bi-translate fs-1 text-baby-blue-dark"></i>
+              </div>
+              <h3 class="h5 fw-bold text-dark mb-2">Program Bahasa</h3>
+              <p class="text-secondary fs-6">Mendalami bahasa, sastra, komunikasi lintas budaya, dan literasi media secara komprehensif.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GURU & STAF ================= -->
+  <section id="guru" class="py-5 bg-baby-blue-light">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Guru & Staf Pengajar</h2>
+        <p class="text-muted">Tenaga pendidik profesional dan berpengalaman yang siap membimbing siswa.</p>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <!-- Kepala Sekolah -->
+        <div class="col-md-4">
+          <div class="card card-hover border-0 shadow-sm h-100 overflow-hidden text-center">
+            <img src="images/Kepala Sekolah.jpg" class="card-img-top teacher-img" alt="Kepala Sekolah SMA Altiora">
+            <div class="card-body p-4">
+              <h3 class="h5 fw-bold text-dark mb-1">Alexander Vance, Ph.D.</h3>
+              <span class="badge bg-baby-blue text-dark mb-3 fs-6">Kepala Sekolah</span>
+              <p class="text-secondary small">Berkomitmen memimpin SMA Altiora menuju keunggulan akademis dan pembentukan karakter mulia.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Wakil Kepala Sekolah -->
+        <div class="col-md-4">
+          <div class="card card-hover border-0 shadow-sm h-100 overflow-hidden text-center">
+            <img src="images/Wakil Kepala Sekolah.jpg" class="card-img-top teacher-img" alt="Wakil Kepala Sekolah SMA Altiora">
+            <div class="card-body p-4">
+              <h3 class="h5 fw-bold text-dark mb-1">Maya Lin, M.Ed.</h3>
+              <span class="badge bg-baby-blue text-dark mb-3 fs-6">Wakil Kepala Sekolah</span>
+              <p class="text-secondary small">Mengkoordinasikan bidang kurikulum dan kesiswaan untuk menciptakan lingkungan belajar yang kondusif.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Master Teacher -->
+        <div class="col-md-4">
+          <div class="card card-hover border-0 shadow-sm h-100 overflow-hidden text-center">
+            <img src="images/Master Teacher.jpg" class="card-img-top teacher-img" alt="Master Teacher SMA Altiora">
+            <div class="card-body p-4">
+              <h3 class="h5 fw-bold text-dark mb-1">Clara Kensington, M.Sc.</h3>
+              <span class="badge bg-baby-blue text-dark mb-3 fs-6">Master Teacher</span>
+              <p class="text-secondary small">Pakar pengembang metode pembelajaran inovatif dan pembina tim olimpiade sains sekolah.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EKSTRAKURIKULER ================= -->
+  <section id="ekstrakurikuler" class="py-5 bg-white">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Ekstrakurikuler</h2>
+        <p class="text-muted">Wadah pengembangan minat, bakat, dan kreativitas di luar jam kelas.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card card-hover border-0 shadow-sm h-100 overflow-hidden">
+            <img src="images/baking class.jpg" class="card-img-top grid-img" alt="Ekskul Baking & Cooking">
+            <div class="card-body text-center p-3">
+              <h3 class="h6 fw-bold mb-0 text-dark">Baking & Cooking</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card card-hover border-0 shadow-sm h-100 overflow-hidden">
+            <img src="images/ekskul robotik.jpg" class="card-img-top grid-img" alt="Ekskul Robotik">
+            <div class="card-body text-center p-3">
+              <h3 class="h6 fw-bold mb-0 text-dark">Robotik</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card card-hover border-0 shadow-sm h-100 overflow-hidden">
+            <img src="images/ekskul basket.jpg" class="card-img-top grid-img" alt="Ekskul Basket">
+            <div class="card-body text-center p-3">
+              <h3 class="h6 fw-bold mb-0 text-dark">Basket</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card card-hover border-0 shadow-sm h-100 overflow-hidden">
+            <img src="images/ekskul bola.jpg" class="card-img-top grid-img" alt="Ekskul Sepak Bola">
+            <div class="card-body text-center p-3">
+              <h3 class="h6 fw-bold mb-0 text-dark">Sepak Bola</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card card-hover border-0 shadow-sm h-100 overflow-hidden">
+            <img src="images/ekskul lukis.jpg" class="card-img-top grid-img" alt="Ekskul Seni Lukis">
+            <div class="card-body text-center p-3">
+              <h3 class="h6 fw-bold mb-0 text-dark">Seni Lukis</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card card-hover border-0 shadow-sm h-100 overflow-hidden">
+            <img src="images/ekskul padus.jpg" class="card-img-top grid-img" alt="Ekskul Paduan Suara">
+            <div class="card-body text-center p-3">
+              <h3 class="h6 fw-bold mb-0 text-dark">Paduan Suara</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card card-hover border-0 shadow-sm h-100 overflow-hidden">
+            <img src="images/ekskul pramuka.jpg" class="card-img-top grid-img" alt="Ekskul Pramuka">
+            <div class="card-body text-center p-3">
+              <h3 class="h6 fw-bold mb-0 text-dark">Pramuka</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card card-hover border-0 shadow-sm h-100 overflow-hidden">
+            <img src="images/orchestra.jpg" class="card-img-top grid-img" alt="Ekskul Orchestra">
+            <div class="card-body text-center p-3">
+              <h3 class="h6 fw-bold mb-0 text-dark">Orchestra</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FASILITAS ================= -->
+  <section id="fasilitas" class="py-5 bg-baby-blue-light">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Fasilitas Sekolah</h2>
+        <p class="text-muted">Sarana dan prasarana modern pendukung proses belajar mengajar.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card card-hover border-0 shadow-sm h-100 overflow-hidden">
+            <img src="images/laboratory sains.jpg" class="card-img-top grid-img" alt="Laboratorium Sains">
+            <div class="card-body p-3">
+              <h3 class="h6 fw-bold text-dark"><i class="bi bi-box-seam me-2 text-baby-blue-dark"></i>Laboratorium Sains</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-hover border-0 shadow-sm h-100 overflow-hidden">
+            <img src="images/laboratory seni.jpg" class="card-img-top grid-img" alt="Laboratorium Seni">
+            <div class="card-body p-3">
+              <h3 class="h6 fw-bold text-dark"><i class="bi bi-palette me-2 text-baby-blue-dark"></i>Laboratorium Seni</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-hover border-0 shadow-sm h-100 overflow-hidden">
+            <img src="images/library digital.jpg" class="card-img-top grid-img" alt="Perpustakaan Digital">
+            <div class="card-body p-3">
+              <h3 class="h6 fw-bold text-dark"><i class="bi bi-book me-2 text-baby-blue-dark"></i>Perpustakaan Digital</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card card-hover border-0 shadow-sm h-100 overflow-hidden">
+            <img src="images/lapangan bola.jpg" class="card-img-top grid-img" alt="Lapangan Bola">
+            <div class="card-body p-3">
+              <h3 class="h6 fw-bold text-dark"><i class="bi bi-dribbble me-2 text-baby-blue-dark"></i>Lapangan Bola</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card card-hover border-0 shadow-sm h-100 overflow-hidden">
+            <img src="images/lapangan lari.jpg" class="card-img-top grid-img" alt="Lapangan Lari">
+            <div class="card-body p-3">
+              <h3 class="h6 fw-bold text-dark"><i class="bi bi-person-walking me-2 text-baby-blue-dark"></i>Lapangan Lari</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BERITA TERBARU ================= -->
+  <section id="berita" class="py-5 bg-white">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Berita Terbaru</h2>
+        <p class="text-muted">Informasi terkini seputar prestasi dan kegiatan SMA Altiora.</p>
+      </div>
+      <div class="row g-4">
+        <!-- Berita 1 -->
+        <div class="col-md-4">
+          <div class="card card-hover border-0 shadow-sm h-100 overflow-hidden">
+            <img src="images/prestasi 1.jpg" class="card-img-top grid-img" alt="Prestasi SMA Altiora">
+            <div class="card-body d-flex flex-column p-4">
+              <small class="text-muted mb-2"><i class="bi bi-calendar3 me-1"></i> 10 Oktober 2026</small>
+              <h3 class="h5 fw-bold text-dark mb-2">SMA Altiora Raih Prestasi dalam Kompetisi</h3>
+              <p class="text-secondary small flex-grow-1">Tim siswa SMA Altiora kembali mengukir prestasi gemilang dalam ajang kejuaraan akademik tingkat nasional.</p>
+              <a href="#" class="text-decoration-none fw-bold text-baby-blue-dark mt-3">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Berita 2 -->
+        <div class="col-md-4">
+          <div class="card card-hover border-0 shadow-sm h-100 overflow-hidden">
+            <img src="images/robotics competition.jpg" class="card-img-top grid-img" alt="Robotics Competition">
+            <div class="card-body d-flex flex-column p-4">
+              <small class="text-muted mb-2"><i class="bi bi-calendar3 me-1"></i> 02 Oktober 2026</small>
+              <h3 class="h5 fw-bold text-dark mb-2">Siswa SMA Altiora Mengikuti Robotics Competition</h3>
+              <p class="text-secondary small flex-grow-1">Klub Robotik SMA Altiora menampilkan inovasi prototipe cerdas pada ajang kompetisi tahunan.</p>
+              <a href="#" class="text-decoration-none fw-bold text-baby-blue-dark mt-3">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Berita 3 -->
+        <div class="col-md-4">
+          <div class="card card-hover border-0 shadow-sm h-100 overflow-hidden">
+            <img src="images/sports week.jpg" class="card-img-top grid-img" alt="Sports Week">
+            <div class="card-body d-flex flex-column p-4">
+              <small class="text-muted mb-2"><i class="bi bi-calendar3 me-1"></i> 25 September 2026</small>
+              <h3 class="h5 fw-bold text-dark mb-2">Semarak Sports Week SMA Altiora</h3>
+              <p class="text-secondary small flex-grow-1">Pekan olahraga tahunan berlangsung meriah, memupuk jiwa sportivitas dan kebersamaan seluruh siswa.</p>
+              <a href="#" class="text-decoration-none fw-bold text-baby-blue-dark mt-3">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GALERI ================= -->
+  <section id="galeri" class="py-5 bg-baby-blue-light">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Galeri Kegiatan</h2>
+        <p class="text-muted">Dokumentasi momen berharga dan aktivitas pembelajaran di SMA Altiora.</p>
+      </div>
+      <div class="row g-3">
+        <div class="col-6 col-md-4">
+          <img src="images/kegiatan belajar 1.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Kegiatan Belajar 1">
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="images/kegiatan belajar 2.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Kegiatan Belajar 2">
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="images/kegiatan belajar 3.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Kegiatan Belajar 3">
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="images/belajar komputer.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Belajar Komputer">
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="images/cooking class.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Cooking Class">
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="images/prestasi 1.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Dokumentasi Prestasi">
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="images/ekskul robotik.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Dokumentasi Robotik">
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="images/ekskul basket.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Dokumentasi Basket">
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="images/ekskul padus.jpg" class="img-fluid rounded shadow-sm gallery-img" alt="Dokumentasi Paduan Suara">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= KONTAK ================= -->
+  <section id="kontak" class="py-5 bg-white">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Hubungi Kami</h2>
+        <p class="text-muted">Kami siap membantu memberikan informasi yang Anda butuhkan terkait pendaftaran dan kegiatan sekolah.</p>
+      </div>
+      <div class="row g-4 align-items-center">
+        <!-- Informasi Kontak -->
+        <div class="col-lg-5">
+          <div class="card card-custom p-4 border-0 shadow-sm h-100">
+            <div class="card-body">
+              <h3 class="h5 fw-bold text-dark mb-4">Informasi Sekretariat</h3>
+              <ul class="list-unstyled mb-0">
+                <li class="d-flex mb-3 align-items-center">
+                  <div class="icon-contact me-3"><i class="bi bi-geo-alt-fill"></i></div>
+                  <div><strong>Alamat:</strong><br>Jl. Pendidikan No. 123, Kota Altiora</div>
+                </li>
+                <li class="d-flex mb-3 align-items-center">
+                  <div class="icon-contact me-3"><i class="bi bi-telephone-fill"></i></div>
+                  <div><strong>Telepon:</strong><br>(021) 555-0199</div>
+                </li>
+                <li class="d-flex mb-3 align-items-center">
+                  <div class="icon-contact me-3"><i class="bi bi-envelope-fill"></i></div>
+                  <div><strong>Email:</strong><br>info@sma-altiora.sch.id</div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div class="icon-contact me-3"><i class="bi bi-whatsapp"></i></div>
+                  <div><strong>WhatsApp:</strong><br>+62 812-3456-7890</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Form Kirim Pesan -->
+        <div class="col-lg-7">
+          <div class="card card-custom p-4 border-0 shadow-sm">
+            <div class="card-body">
+              <h3 class="h5 fw-bold text-dark mb-3">Kirim Pesan / Pertanyaan</h3>
+              <form>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label small fw-semibold">Nama Lengkap</label>
+                    <input type="text" class="form-control" placeholder="Masukkan nama Anda" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label small fw-semibold">Email / WhatsApp</label>
+                    <input type="text" class="form-control" placeholder="Nomor HP atau Email" required>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label small fw-semibold">Subjek</label>
+                    <input type="text" class="form-control" placeholder="Contoh: Pendaftaran Siswa Baru">
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label small fw-semibold">Pesan</label>
+                    <textarea class="form-control" rows="4" placeholder="Tuliskan pesan atau pertanyaan Anda di sini..." required></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button type="button" class="btn btn-accent px-4 fw-bold">Kirim Pesan</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-baby-blue text-dark pt-5 pb-3">
+    <div class="container">
+      <div class="row g-4 mb-4">
+        <div class="col-md-5">
+          <h4 class="h5 fw-bold text-dark mb-3">SMA ALTIORA</h4>
+          <p class="small text-secondary">Membentuk generasi pembawa perubahan dengan landasan akademis yang kokoh dan karakter yang mulia.</p>
+          <p class="small fst-italic fw-semibold text-baby-blue-dark">"Rise Higher, Dream Further"</p>
+        </div>
+        <div class="col-md-3">
+          <h5 class="h6 fw-bold text-dark mb-3">Navigasi</h5>
+          <ul class="list-unstyled small">
+            <li><a href="#profil" class="text-secondary text-decoration-none">Profil Sekolah</a></li>
+            <li><a href="#akademik" class="text-secondary text-decoration-none">Program Akademik</a></li>
+            <li><a href="#guru" class="text-secondary text-decoration-none">Guru & Staf</a></li>
+            <li><a href="#ekstrakurikuler" class="text-secondary text-decoration-none">Ekstrakurikuler</a></li>
+            <li><a href="#berita" class="text-secondary text-decoration-none">Berita Terbaru</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5 class="h6 fw-bold text-dark mb-3">Ikuti Kami</h5>
+          <div class="d-flex gap-3 fs-5">
+            <a href="#" class="text-dark social-icon"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-dark social-icon"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-dark social-icon"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="text-dark social-icon"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-dark opacity-25">
+      <div class="text-center small text-secondary">
+        &copy; 2026 SMA Altiora. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
